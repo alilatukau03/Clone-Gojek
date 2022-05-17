@@ -50,7 +50,7 @@ export default class App extends Component {
               }}>
               <Image source={require('./Icon/gopay.png')} />
               <Text style={{fontSize: 17, fontWeight: 'bold', color: 'white'}}>
-                Rp 50.000
+                Rp 1.000.000.000.000.000,00
               </Text>
             </View>
             <View
@@ -122,6 +122,214 @@ export default class App extends Component {
                     fontWeight: 'bold',
                     color: 'white',
                     marginTop: 15,
+                  }}>
+                  More
+                </Text>
+              </View>
+            </View>
+          </View>
+          {/* feature */}
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              marginTop: 18,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                width: '100%',
+                marginBottom: 18,
+              }}>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-ride.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-RIDE
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-car.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-CAR
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-bluebird.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-BLUEBIRD
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-send.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-SEND
+                </Text>
+              </View>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                width: '100%',
+                marginBottom: 18,
+              }}>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-deals.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-DEALS
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-pulsa.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-PULSA
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-food.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
+                  }}>
+                  GO-FOOD
+                </Text>
+              </View>
+              <View style={{width: '25%', alignItems: 'center'}}>
+                <View
+                  style={{
+                    width: 58,
+                    height: 58,
+                    borderWidth: 1,
+                    borderColor: '#efefef',
+                    borderRadius: 18,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <Image source={require('./Icon/go-more.png')} />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    marginTop: 6,
                   }}>
                   More
                 </Text>
