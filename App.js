@@ -6,6 +6,7 @@ export default class App extends Component {
     return (
       <View style={{flex: 1}}>
         <View style={{flex: 1, backgroundColor: 'white', paddingTop: 15}}>
+          {/* search bar */}
           <View style={{marginHorizontal: 17, flexDirection: 'row'}}>
             <View style={{position: 'relative', flex: 1}}>
               <TextInput
@@ -34,6 +35,97 @@ export default class App extends Component {
                 justifyContent: 'center',
               }}>
               <Image source={require('./Icon/promo.png')} />
+            </View>
+          </View>
+          {/* gopay */}
+          <View style={{marginHorizontal: 17, marginTop: 8}}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                backgroundColor: '#2c5fb8',
+                borderTopLeftRadius: 4,
+                borderTopRightRadius: 4,
+                padding: 14,
+              }}>
+              <Image source={require('./Icon/gopay.png')} />
+              <Text style={{fontSize: 17, fontWeight: 'bold', color: 'white'}}>
+                Rp 50.000
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                paddingTop: 20,
+                paddingBottom: 14,
+                backgroundColor: '#2f65bd',
+                borderBottomLeftRadius: 4,
+                borderBottomRightRadius: 4,
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={require('./Icon/pay.png')} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Pay
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={require('./Icon/nearby.png')} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Nearby
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={require('./Icon/topup.png')} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  Top Up
+                </Text>
+              </View>
+              <View
+                style={{
+                  flex: 1,
+                  alignItems: 'center',
+                }}>
+                <Image source={require('./Icon/more.png')} />
+                <Text
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginTop: 15,
+                  }}>
+                  More
+                </Text>
+              </View>
             </View>
           </View>
         </View>
