@@ -629,7 +629,7 @@ export default function App() {
               marginTop: 10,
             }}>
             <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1c1c1c'}}>
-              Nearby Restaurant
+              Nearby Restaurantt
             </Text>
             <Text style={{fontSize: 17, fontWeight: 'bold', color: '#61a756'}}>
               See All
