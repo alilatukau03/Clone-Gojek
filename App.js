@@ -12,7 +12,9 @@ import React from 'react';
 export default function App() {
   return (
     <View style={{flex: 1}}>
-      <ScrollView style={{flex: 1, backgroundColor: 'white', paddingTop: 15}}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={{flex: 1, backgroundColor: 'white', paddingTop: 15}}>
         {/* search bar */}
         <View style={{marginHorizontal: 17, flexDirection: 'row'}}>
           <View style={{position: 'relative', flex: 1}}>
@@ -396,7 +398,6 @@ export default function App() {
               paddingBottom: 20,
               borderBottomColor: '#e8e9ed',
               borderBottomWidth: 1,
-              marginBottom: 100,
             }}>
             <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>
               GO-NEWS
@@ -431,6 +432,337 @@ export default function App() {
               </Text>
             </TouchableOpacity>
           </View>
+        </View>
+        {/* internal infomation */}
+        <View style={{padding: 16, paddingBottom: 0}}>
+          <View
+            style={{
+              height: 15,
+              width: 55,
+            }}>
+            <Image
+              source={require('./logo/gojek.png')}
+              style={{
+                width: undefined,
+                height: undefined,
+                flex: 1,
+                resizeMode: 'contain',
+              }}
+            />
+          </View>
+          <Text
+            style={{
+              fontSize: 17,
+              fontWeight: 'bold',
+              color: '#1c1c1c',
+              marginTop: 15,
+              marginBottom: 20,
+            }}>
+            Complete Your Profile
+          </Text>
+          <View style={{flexDirection: 'row'}}>
+            <View>
+              <Image source={require('./dummy/facebook-connect.png')} />
+            </View>
+            <View style={{marginLeft: 16, flex: 1, marginBottom: 16}}>
+              <Text
+                style={{
+                  fontSize: 15,
+                  fontWeight: 'bold',
+                  color: '#a4a4a4',
+                }}>
+                Connect with facebook
+              </Text>
+              <Text
+                style={{
+                  fontSize: 15,
+                  fontWeight: 'normal',
+                  color: '#a4a4a4',
+                  width: '70%',
+                }}>
+                Login in faster without verification code
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#61a756',
+              paddingHorizontal: 12,
+              paddingVertical: 11,
+              alignSelf: 'flex-end',
+              borderRadius: 4,
+            }}>
+            <Text
+              style={{
+                fontSize: 13,
+                fontWeight: 'bold',
+                color: 'white',
+                textAlign: 'center',
+              }}>
+              CONNECT
+            </Text>
+          </TouchableOpacity>
+          <View
+            style={{
+              marginTop: 16,
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+            }}></View>
+        </View>
+        {/* banner information */}
+        <View style={{padding: 16}}>
+          <View
+            style={{
+              position: 'relative',
+            }}>
+            <Image
+              source={require('./dummy/food-banner.jpg')}
+              style={{height: 170, width: '100%', borderRadius: 6}}
+            />
+            <View
+              style={{
+                width: '100%',
+                height: '100%',
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                backgroundColor: 'black',
+                opacity: 0.15,
+                borderRadius: 6,
+              }}></View>
+            <View
+              style={{
+                height: 15,
+                width: 55,
+                position: 'absolute',
+                top: 16,
+                left: 16,
+              }}>
+              <Image
+                source={require('./logo/white.png')}
+                style={{
+                  width: undefined,
+                  height: undefined,
+                  flex: 1,
+                  resizeMode: 'contain',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                width: '100%',
+                flexDirection: 'row',
+                alignItems: 'center',
+                paddingHorizontal: 16,
+                paddingBottom: 16,
+              }}>
+              <View>
+                <Text
+                  style={{
+                    fontSize: 18,
+                    fontWeight: 'bold',
+                    color: 'white',
+                    marginBottom: 5,
+                  }}>
+                  Free GO-FOOD Voucher
+                </Text>
+                <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
+                  Quick, before they run out!
+                </Text>
+              </View>
+              <View style={{flex: 1, paddingLeft: 12}}>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: '#61a756',
+                    paddingHorizontal: 12,
+                    paddingVertical: 11,
+                    alignSelf: 'stretch',
+                    borderRadius: 4,
+                  }}>
+                  <Text
+                    style={{
+                      fontSize: 13,
+                      fontWeight: 'bold',
+                      color: 'white',
+                      textAlign: 'center',
+                    }}>
+                    GET VOUCHER
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+          <View
+            style={{
+              marginTop: 16,
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+            }}></View>
+        </View>
+        {/* buy restoran */}
+        <View>
+          <View
+            style={{
+              height: 15,
+              width: 60,
+              marginLeft: 16,
+            }}>
+            <Image
+              source={require('./logo/go-food.png')}
+              style={{
+                width: undefined,
+                height: undefined,
+                flex: 1,
+                resizeMode: 'contain',
+              }}
+            />
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              marginBottom: 16,
+              paddingHorizontal: 16,
+              marginTop: 10,
+            }}>
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1c1c1c'}}>
+              Nearby Restaurant
+            </Text>
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: '#61a756'}}>
+              See All
+            </Text>
+          </View>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            style={{flexDirection: 'row', paddingLeft: 16}}>
+            <View style={{marginRight: 16}}>
+              <View style={{width: 150, height: 150, borderRadius: 4}}>
+                <Image
+                  source={require('./dummy/go-food-banka.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#1c1c1c',
+                    marginTop: 12,
+                  }}>
+                  Sederhana Minang
+                </Text>
+              </View>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View style={{width: 150, height: 150, borderRadius: 4}}>
+                <Image
+                  source={require('./dummy/go-food-gm.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#1c1c1c',
+                    marginTop: 12,
+                  }}>
+                  Alka Store
+                </Text>
+              </View>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View style={{width: 150, height: 150, borderRadius: 4}}>
+                <Image
+                  source={require('./dummy/go-food-kfc.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#1c1c1c',
+                    marginTop: 12,
+                  }}>
+                  Ceu Emi
+                </Text>
+              </View>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View style={{width: 150, height: 150, borderRadius: 4}}>
+                <Image
+                  source={require('./dummy/go-food-orins.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#1c1c1c',
+                    marginTop: 12,
+                  }}>
+                  Mang Tasman
+                </Text>
+              </View>
+            </View>
+            <View style={{marginRight: 16}}>
+              <View style={{width: 150, height: 150, borderRadius: 4}}>
+                <Image
+                  source={require('./dummy/go-food-pak-boss.jpg')}
+                  style={{
+                    width: undefined,
+                    height: undefined,
+                    flex: 1,
+                    resizeMode: 'cover',
+                    borderRadius: 4,
+                  }}
+                />
+                <Text
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                    color: '#1c1c1c',
+                    marginTop: 12,
+                  }}>
+                  Ceu Lili
+                </Text>
+              </View>
+            </View>
+          </ScrollView>
+          <View
+            style={{
+              marginTop: 16,
+              borderBottomColor: '#e8e9ed',
+              borderBottomWidth: 1,
+              marginBottom: 100,
+              marginHorizontal: 16,
+            }}></View>
         </View>
       </ScrollView>
       {/* navbutton */}
